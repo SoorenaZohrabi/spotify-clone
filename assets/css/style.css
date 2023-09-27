@@ -7,7 +7,7 @@
 }
 
 html {
-    font-size: 12px;
+    font-size: 10px;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
 }
@@ -86,6 +86,7 @@ section.banner h1 {
 section.banner p {
     font-size: 1.6rem; 
     margin: 2rem 0;
+    text-align: center;
 }
 
 section.banner button {
@@ -118,7 +119,7 @@ footer section.container {
 }
 
 footer .logo img {
-    width: 70%;
+    width: 50%;
 }
 
 footer .logo img:hover {
