@@ -63,3 +63,43 @@ header nav ul li:hover {
     color: #1ED760;
     cursor: pointer;
 }
+
+section.banner {
+    background-color: #2941AB;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1ED760;
+    background-image: url(./../images/main.svg);
+    background-size: 175%;
+    background-position: 46% 4%;
+    background-repeat: no-repeat;
+}
+
+section.banner h1 {
+    font-size: 12rem;
+    line-height: 1.2;
+}
+
+section.banner p {
+    font-size: 1.6rem; 
+    margin: 2rem 0;
+}
+
+section.banner button {
+    background-color: #1ED760;
+    border: none;
+    border-radius: 3rem;
+    color: #2941AB;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.8rem 2.7rem;
+    margin: 2rem 0;
+}
+
+section.banner button:hover {
+    cursor: pointer;
+    transform: scale(104%, 104%);
+}
