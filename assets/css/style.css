@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --green: #1ED760;
+    --gray: #919496;
+    --header-height: 80px;
+    --logo-height: 40px;
+}
+
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 html {
@@ -22,15 +29,15 @@ li {
 
 header {
     background-color: #000000;
-    height: 8rem;
+    height: var(--header-height);
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    margin: auto;
     height: 100%;
+    margin: auto;
 }
 
 header .logo {
@@ -38,7 +45,7 @@ header .logo {
 }
 
 header .logo img {
-    height: 40px;
+    height: var(--logo-height);
     align-self: center;
 }
 
@@ -60,8 +67,18 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-    color: #1ED760;
+    color: var(--green);
     cursor: pointer;
+}
+
+header nav.mobile-menu {
+    display: none;
+    align-self: center;
+}
+
+header nav.mobile-menu img {
+    width: 25px;
+    height: 25px;
 }
 
 section.banner {
@@ -71,8 +88,8 @@ section.banner {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #1ED760;
-    background-image: url(./../images/main.svg);
+    color: var(--green);
+    background-image: url('./../images/main.svg');
     background-size: 175%;
     background-position: 46% 4%;
     background-repeat: no-repeat;
@@ -84,13 +101,13 @@ section.banner h1 {
 }
 
 section.banner p {
-    font-size: 1.6rem; 
+    font-size: 1.6rem;
     margin: 2rem 0;
     text-align: center;
 }
 
 section.banner button {
-    background-color: #1ED760;
+    background-color: var(--green);
     border: none;
     border-radius: 3rem;
     color: #2941AB;
@@ -119,7 +136,7 @@ footer section.container {
 }
 
 footer .logo img {
-    width: 50%;
+    width: 70%;
 }
 
 footer .logo img:hover {
@@ -139,18 +156,18 @@ footer .links ul li {
 }
 
 footer .links ul li:hover {
-    color: #1ED760;
+    color: var(--green);
     cursor: pointer;
 }
 
 footer .links ul .heading {
-    color: #919496;
+    color: var(--gray);
     font-weight: 700;
     font-size: 1.3rem;
 }
 
 footer .links ul .heading:hover {
-    color: #919496;
+    color: var(--gray);
     cursor: text;
 }
 
@@ -177,7 +194,7 @@ footer .social ul li {
 }
 
 footer .social ul li:hover {
-    color: #1ED760;
+    color: var(--green);
     cursor: pointer;
 }
 
@@ -187,11 +204,11 @@ footer .location {
     display: flex;
     justify-content: flex-end;
     font-size: 1.2rem;
-    color: #919496;
+    color: var(--gray);
 }
 
 footer .location:hover {
-    color: #1ED760;
+    color: var(--green);
     cursor: pointer;
 }
 
@@ -218,18 +235,18 @@ footer .extras ul {
 
 footer .extras ul li {
     font-size: 1.1rem;
-    color: #919496;
+    color: var(--gray);
     padding: 0.5rem 1rem;
 }
 
 footer .extras ul li:hover {
-    color: #1ED760;
+    color: var(--green);
     cursor: pointer;
 }
 
 footer .extras span {
     font-size: 1.2rem;
-    color: #919496;
+    color: var(--gray);
     padding-right: 1rem;
     align-self: center;
 }
