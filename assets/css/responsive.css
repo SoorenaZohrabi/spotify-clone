@@ -26,7 +26,7 @@
     }
 
     header nav.mobile-menu {
-        display: inline;
+        display: inline !important;
     }
 
     section.banner h1 {
